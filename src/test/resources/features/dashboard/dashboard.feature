@@ -27,3 +27,9 @@ Feature: Dashboard
     Then the user should be redirected to the dashboard
     When the user clicks the logout button
     Then the user should be redirected to the login page
+
+  @regression @dashboard
+  Scenario: User can check from the dashboard new
+    Then the user should be redirected to the dashboard
+    When the user clicks the logout button
+    Then the user should be redirected to the login page
