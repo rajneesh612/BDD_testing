@@ -11,6 +11,12 @@ Feature: User Login
     When the user enters valid credentials
     Then the user should be redirected to the dashboard
 
+  @sanity @login
+  Scenario: Successful login with valid credentials
+    When the user enters valid credentials
+    Then the user should be redirected to the dashboard
+
+
   @regression @login
   Scenario Outline: Login fails with invalid credentials
     When the user enters username "<username>" and password "<password>"
